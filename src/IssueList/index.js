@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Button, Checkbox, Comment, Header } from 'semantic-ui-react';
 import CreateComment from '../CreateCommentForm';
+import moment from 'moment';
 
 
 class IssueList extends Component {
@@ -90,7 +91,7 @@ class IssueList extends Component {
 						      <Comment.Content>
 						        <Comment.Author as='a'>{comment.created_by.name}</Comment.Author>
 						        <Comment.Metadata>
-						          <span>{comment.created_at}</span>
+						          <span>{moment(comment.created_at).format('llll')}</span>
 						        </Comment.Metadata>
 						        <Comment.Text>{comment.body}</Comment.Text>
 						        {/*<Comment.Actions>
@@ -103,8 +104,8 @@ class IssueList extends Component {
 		return (
 
 			<Card fluid key={issue.id}>
-				<Card.Content>
-					<Card.Header>{issue.created_by.name}, {issue.created_by.department} / {issue.created_at} </Card.Header>
+				<Card.Content>							
+					<Card.Header>{issue.created_by.name}, {issue.created_by.department} / {moment(issue.created_at).format('LLLL')} </Card.Header>
 					{/*<Card.Description>Subject Description</Card.Description>*/}
 					<Card.Description>{issue.subject}</Card.Description>
 					<Checkbox label="Resolved"/>
