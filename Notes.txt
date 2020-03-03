@@ -1,4 +1,8 @@
 ================================================================================
+https://momentjs.com/
+https://docs.python.org/2/library/datetime.html
+https://flaviocopes.com/momentjs/
+
 Steps for creating date manipulations
 $ npm install moment --save
 

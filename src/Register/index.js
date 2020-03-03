@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Form, Button, Message, Grid, Header, Icon, Segment, Dropdown, Select } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { Form, Button, Message, Grid, Header, Icon, Segment } from 'semantic-ui-react';
+// import { Link } from 'react-router-dom';
 
 
 const options = [
