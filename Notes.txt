@@ -1,0 +1,28 @@
+================================================================================
+https://momentjs.com/
+https://docs.python.org/2/library/datetime.html
+https://flaviocopes.com/momentjs/
+
+Steps for creating date manipulations
+$ npm install moment --save
+
+import moment from 'moment';
+
+Below are some of the most common options:
+moment('2017-09-28T21:45:23Z').format('L')
+"09/28/2017"
+moment('2017-09-28T21:45:23Z').format('LL')
+"September 28, 2017"
+moment('2017-09-28T21:45:23Z').format('LLL')
+"September 28, 2017 2:45 PM"
+moment('2017-09-28T21:45:23Z').format('LLLL')
+"Thursday, September 28, 2017 2:45 PM"
+moment('2017-09-28T21:45:23Z').format('dddd')
+"Thursday"
+moment('2017-09-28T21:45:23Z').fromNow()
+"7 hours ago"
+moment('2017-09-28T21:45:23Z').calendar()
+"Today at 2:45 PM"
+
+================================================================================
+
